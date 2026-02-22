@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilan | Desarrollador Frontend</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">&lt;Portfolio/&gt;</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero container">
+        <div class="profile-box">
+            <img src="assets/img/perfil.jpg" alt="Dilan" class="profile-img">
+        </div>
+        <h1>Hola, soy <span class="cyan-text">Dilan</span></h1>
+        <p class="subtitle">Desarrollador Frontend</p>
+        <p class="description">Especializado en crear interfaces modernas, interactivas y funcionales.</p>
+        <a href="#proyectos" class="btn-main">Ver Proyectos <i class="fas fa-chevron-down"></i></a>
+    </header>
+
+    <section id="proyectos" class="container">
+        <h2 class="section-title">Proyectos <span class="cyan-text">Destacados</span></h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Plataforma E-Commerce</h3>
+                <p>Tienda virtual con carrito y pagos.</p>
+                <div class="tags"><span>React</span> <span>Node.js</span></div>
+                <div class="card-footer">
+                    <a href="#"><i class="fab fa-github"></i> Código</a>
+                    <a href="#" class="btn-small">Ver Demo</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>App Gestor de tareas</h3>
+                <p>Productividad al máximo nivel.</p>
+                <div class="tags"><span>JavaScript</span> <span>Firebase</span></div>
+                <div class="card-footer">
+                    <a href="#"><i class="fab fa-github"></i> Código</a>
+                    <a href="#" class="btn-small">Ver Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container">
+        <h2 class="section-title">Ponte en <span class="cyan-text">Contacto</span></h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo" required>
+            <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+            <button type="submit" class="btn-main">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
